@@ -2,49 +2,58 @@
 @plugin "tailwindcss-animate";
 
 :root {
-  /* Project Salus - Natural Scientific Theme (User Defined) */
-  --background: #F2F0E9;
-  /* Canvas Beige */
-  --foreground: #00311F;
-  /* Forest Black */
+  /* Project Salus - Dark Academia / Modern Clinical Theme */
 
-  --card: #fff7e6;
-  /* White Sage */
-  --card-foreground: #00311F;
+  /* Backgrounds */
+  --background: #0F1115;
+  /* Deep Charcoal / Midnight */
+  --foreground: #EAEAEA;
+  /* Off-White / Paper */
 
-  --popover: #fff7e6;
-  --popover-foreground: #00311F;
+  /* Cards & Surfaces */
+  --card: #161920;
+  /* Slightly lighter dark */
+  --card-foreground: #EAEAEA;
 
-  /* Deep Emerald Accents */
-  --primary: #1A4D2E;
-  --primary-foreground: #F2F0E9;
+  --popover: #1F2329;
+  /* Off-Black */
+  --popover-foreground: #EAEAEA;
 
-  --secondary: #E8EFE9;
-  /* Soft Sage */
-  --secondary-foreground: #1A4D2E;
+  /* Brand Colors */
+  --primary: #3B82F6;
+  /* Tech Blue for high contrast actions */
+  --primary-foreground: #FFFFFF;
 
-  --muted: #E2E8F0;
-  --muted-foreground: #5C6B66;
-  /* Moss Grey */
+  --secondary: #27272A;
+  /* Dark Grey for secondary elements */
+  --secondary-foreground: #A1A1AA;
 
-  --accent: #D97706;
-  /* Burnt Clay */
-  --accent-foreground: #F2F0E9;
+  --muted: #27272A;
+  --muted-foreground: #8B949E;
+  /* Cool Grey */
 
-  --destructive: #EF4444;
-  --destructive-foreground: #F2F0E9;
+  --accent: #EAEAEA;
+  /* White accent */
+  --accent-foreground: #0F1115;
 
-  --border: rgba(26, 77, 46, 0.15);
-  /* Low opacity emerald */
-  --input: rgba(26, 77, 46, 0.15);
-  --ring: #1A4D2E;
+  --destructive: #7F1D1D;
+  --destructive-foreground: #FCA5A5;
+
+  /* Borders & Inputs */
+  --border: rgba(255, 255, 255, 0.1);
+  /* Subtle white border */
+  --input: rgba(255, 255, 255, 0.1);
+  --ring: #3B82F6;
 
   --radius: 0.5rem;
 
-  /* Status Colors */
+  /* Status Colors (Clinical) */
   --status-safe: #10B981;
-  --status-warning: #D97706;
+  /* Clinical Teal/Emerald */
+  --status-warning: #F59E0B;
+  /* Amber */
   --status-danger: #EF4444;
+  /* Signal Red */
 }
 
 @theme inline {
@@ -101,8 +110,8 @@ body {
 /* Custom Utilities */
 @layer utilities {
   .glass-panel {
-    background: rgba(255, 247, 230, 0.8);
-    /* White Sage Translucent */
+    background: rgba(15, 17, 21, 0.7);
+    /* Dark Glass */
     backdrop-filter: blur(12px);
     border: 1px solid var(--border);
   }
