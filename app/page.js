@@ -228,10 +228,19 @@ export default function Home() {
                         {!hasSearched && !isScrolled && (
                             <motion.div
                                 style={{ opacity: scrollIndicatorOpacity }}
-                                className="absolute bottom-12 flex flex-col items-center space-y-2 pointer-events-none"
+                                className="absolute bottom-8 pointer-events-none"
                             >
-                                <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground font-semibold">Scroll</span>
-                                <ArrowDownIcon className="w-5 h-5 text-muted-foreground animate-bounce" />
+                                <div className="flex flex-col items-center gap-4">
+                                    {/* Mouse/Track Shape - Longer and Wider */}
+                                    <div className="flex flex-col items-center justify-start w-14 h-28 rounded-full border-4 border-white/40 bg-background/30 backdrop-blur-md p-2 shadow-[0_0_20px_rgba(0,0,0,0.15)] ring-1 ring-white/10">
+                                        <motion.div
+                                            animate={{ y: [0, 32, 0] }}
+                                            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                                            className="w-3 h-3 rounded-full bg-primary shadow-sm mt-2"
+                                        />
+                                    </div>
+                                    <span className="text-sm font-bold tracking-[0.3em] text-foreground/80 uppercase drop-shadow-sm">Scroll</span>
+                                </div>
                             </motion.div>
                         )}
                     </div>
